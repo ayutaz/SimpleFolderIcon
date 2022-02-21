@@ -13,7 +13,7 @@ namespace SimpleFolderIcon.Editor
             EditorApplication.projectWindowItemOnGUI += DrawFolderIcon;
         }
 
-        static void DrawFolderIcon(string guid, Rect rect)
+        private static void DrawFolderIcon(string guid, Rect rect)
         {
             var path = AssetDatabase.GUIDToAssetPath(guid);
             var iconDictionary = IconDictionaryCreator.IconDictionary;
