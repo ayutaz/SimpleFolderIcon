@@ -1,7 +1,7 @@
 # SimpleFolderIcon
 
-[![GitHub all releases](https://img.shields.io/github/downloads/SeaeeesSan/SimpleFolderIcon/total)](https://github.com/SeaeeesSan/SimpleFolderIcon/releases)
-[![GitHub license](https://img.shields.io/github/license/SeaeeesSan/SimpleFolderIcon)](https://github.com/SeaeeesSan/SimpleFolderIcon/blob/master/LICENSE)
+[![GitHub all releases](https://img.shields.io/github/downloads/ayutaz/SimpleFolderIcon/total)](https://github.com/SeaeeesSan/SimpleFolderIcon/releases)
+[![GitHub license](https://img.shields.io/github/license/ayutaz/SimpleFolderIcon)](https://github.com/SeaeeesSan/SimpleFolderIcon/blob/master/LICENSE)
 
 ### 日本語版は[こちら](README_jp.md)
 
