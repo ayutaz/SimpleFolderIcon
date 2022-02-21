@@ -48,7 +48,7 @@ namespace SimpleFolderIcon.Editor
             FileInfo[] info = dir.GetFiles("*.png");
             foreach(FileInfo f in info)
             {
-                var texture = (Texture)AssetDatabase.LoadAssetAtPath($"Assets/SimpleFolderIcon/Icons/{f.Name}", typeof(Texture2D));
+                var texture = (Texture)AssetDatabase.LoadAssetAtPath($"Packages/jp.ayutaz.simplefoldericon/Icons/{f.Name}", typeof(Texture2D));
                 dictionary.Add(Path.GetFileNameWithoutExtension(f.Name),texture);
             }
 
