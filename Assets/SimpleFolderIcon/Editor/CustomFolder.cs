@@ -1,4 +1,5 @@
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -20,8 +21,7 @@ namespace SimpleFolderIcon.Editor
 
             if (path == "" ||
                 Event.current.type != EventType.Repaint ||
-                !File.GetAttributes(path).HasFlag(FileAttributes.Directory) ||
-                !iconDictionary.ContainsKey(Path.GetFileName(path)))
+                !File.GetAttributes(path).HasFlag(FileAttributes.Directory))
             {
                 return;
             }
@@ -41,7 +41,12 @@ namespace SimpleFolderIcon.Editor
                 imageRect = new Rect(rect.x + 2, rect.y - 1, rect.height + 2, rect.height + 2);
             }
 
-            var texture = IconDictionaryCreator.IconDictionary[Path.GetFileName(path)];
+            Texture texture = null;
+            foreach (var key in iconDictionary.Keys.Where(key => Path.GetFileName(path).Contains(key)))
+            {
+                texture = IconDictionaryCreator.IconDictionary[key];
+            }
+
             if (texture == null)
             {
                 return;
