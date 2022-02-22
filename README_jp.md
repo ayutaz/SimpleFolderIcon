@@ -1,7 +1,7 @@
 # SimpleFolderIcon
 
-[![GitHub all releases](https://img.shields.io/github/downloads/ayutaz/SimpleFolderIcon/total)](https://github.com/SeaeeesSan/SimpleFolderIcon/releases)
-[![GitHub license](https://img.shields.io/github/license/ayutaz/SimpleFolderIcon)](https://github.com/SeaeeesSan/SimpleFolderIcon/blob/master/LICENSE)
+[![GitHub all releases](https://img.shields.io/github/downloads/ayutaz/SimpleFolderIcon/total)](https://github.com/ayutaz/SimpleFolderIcon/releases)
+[![GitHub license](https://img.shields.io/github/license/ayutaz/SimpleFolderIcon)](https://github.com/ayutaz/SimpleFolderIcon/blob/master/LICENSE)
 
 ![image](https://user-images.githubusercontent.com/68797964/132967661-a6aff48e-4605-417f-8f4c-367d9172ed0f.png)
 
@@ -11,29 +11,24 @@
 
 ### Folder List
 
-- Animations
+以下の名前がフォルダ名に含まれている場合、そのフォルダのアイコンを変更します。
+
+- Animation
 - Audio
 - Editor
-- Fonts
-- Materials
-- Models
-- Plugins
-- Prefabs
-- Presets
-- Resources
-- Scenes
-- Scripts
-- Settings
-- Shaders
-- Sprites
-- Textures
-
-## Customize
-
-`Assets/SimpleFolderIcon/Icons/Default/Default.png`がアイコンテンプレートです。  
-アイコンを追加する場合は`Assets/SimpleFolderIcon/Icons/`に.png 形式のアイコン（推奨 256×256）を入れてください。
-
-`Assets/SimpleFolderIcon/Icons/`内のアイコンのファイル名が、そのまま適用されるフォルダの名前になっています。**画像をリネーム・削除して、アイコンをカスタマイズ可能です。**
+- Font
+- Material
+- Model
+- Plugin
+- Prefab
+- Preset
+- Resource
+- Scene
+- Script
+- Setting
+- Shader
+- Sprite
+- Texture
 
 ## Requirement
 
@@ -43,7 +38,11 @@
 
 ### Install via UPM(using Git URL)
 
-- `https://github.com/ayutaz/SimpleFolderIcon.git?path=/Assets/SimpleFolderIcon` をパッケージマネージャの Git から追加に入力
+- Add `https://github.com/ayutaz/SimpleFolderIcon.git?path=/Assets/SimpleFolderIcon` to Package Manager.
+
+### Install via OpenUPM
+
+- `openupm add jp.hadashikick.vcontainer`
 
 ## License
 
