@@ -1,7 +1,7 @@
 # SimpleFolderIcon
 
-[![GitHub all releases](https://img.shields.io/github/downloads/ayutaz/SimpleFolderIcon/total)](https://github.com/SeaeeesSan/SimpleFolderIcon/releases)
-[![GitHub license](https://img.shields.io/github/license/ayutaz/SimpleFolderIcon)](https://github.com/SeaeeesSan/SimpleFolderIcon/blob/master/LICENSE)
+[![GitHub all releases](https://img.shields.io/github/downloads/ayutaz/SimpleFolderIcon/total)](https://github.com/ayutaz/SimpleFolderIcon/releases)
+[![GitHub license](https://img.shields.io/github/license/ayutaz/SimpleFolderIcon)](https://github.com/ayutaz/SimpleFolderIcon/blob/master/LICENSE)
 
 ### 日本語版は[こちら](README_jp.md)
 
@@ -13,32 +13,24 @@
 
 ### Folder List
 
-- Animations
+If the following names are included in the folder name, change the icon for that folder.
+
+- Animation
 - Audio
 - Editor
-- Fonts
-- Materials
-- Models
-- Plugins
-- Prefabs
-- Presets
-- Resources
-- Scenes
-- Scripts
-- Settings
-- Shaders
-- Sprites
-- Textures
-
-## Customize
-
-`Assets/SimpleFolderIcon/Icons/Default/Default.png` is the sample icon file.
-Set your own icons by adding the **PNG** format images in `Assets/SimpleFolderIcon/Icons/`.
-The preferred size of the image is **256x256**.
-
-File names of the icon images in `Assets/SimpleFolderIcon/Icons/` are associated with the names of the folder that will be customize.
-
-**Just simply customize the icons by renaming or deleting the sample image files!**
+- Font
+- Material
+- Model
+- Plugin
+- Prefab
+- Preset
+- Resource
+- Scene
+- Script
+- Setting
+- Shader
+- Sprite
+- Texture
 
 ## Requirement
 
@@ -49,6 +41,10 @@ File names of the icon images in `Assets/SimpleFolderIcon/Icons/` are associated
 ### Install via UPM(using Git URL)
 
 - Add `https://github.com/ayutaz/SimpleFolderIcon.git?path=/Assets/SimpleFolderIcon` to Package Manager.
+
+### Install via OpenUPM
+
+- `openupm add jp.hadashikick.vcontainer`
 
 ## License
 
