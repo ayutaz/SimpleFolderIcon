@@ -42,7 +42,7 @@
 
 ### Install via OpenUPM
 
-- `openupm add jp.hadashikick.vcontainer`
+- `openupm add jp.ayutaz.simplefoldericon`
 
 ## License
 
