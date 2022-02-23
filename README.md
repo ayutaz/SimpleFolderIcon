@@ -44,7 +44,7 @@ If the following names are included in the folder name, change the icon for that
 
 ### Install via OpenUPM
 
-- `openupm add jp.hadashikick.vcontainer`
+- `openupm add jp.ayutaz.simplefoldericon`
 
 ## License
 
