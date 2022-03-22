@@ -27,6 +27,16 @@ namespace SimpleFolderIcon.Editor
 
         private static bool ContainsIconAsset(IEnumerable<string> assets)
         {
+            if (!Directory.Exists(PackageManagerIconPath))
+            {
+                return assets.Any(str => ReplaceSeparatorChar(Path.GetDirectoryName(str)) == UnityPackageIconPath);
+            }
+
+            if (!Directory.Exists(UnityPackageIconPath))
+            {
+                return assets.Any(str => ReplaceSeparatorChar(Path.GetDirectoryName(str)) == PackageManagerIconPath);
+            }
+
             return assets.Any(str => (ReplaceSeparatorChar(Path.GetDirectoryName(str)) == PackageManagerIconPath) || (ReplaceSeparatorChar(Path.GetDirectoryName(str)) == UnityPackageIconPath));
         }
 
