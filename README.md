@@ -49,7 +49,7 @@ If the following names are included in the folder name, change the icon for that
 ### Install manually (using .unitypackage)
 
 1. Download the .unitypackage from [releases](https://github.com/ayutaz/SimpleFolderIcon/releases) page.
-2. Open VContainer.x.x.x.unitypackage
+2. Open SimpleFolderIcon.x.x.x.unitypackage
 
 ## License
 
