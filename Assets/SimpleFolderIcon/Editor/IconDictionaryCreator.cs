@@ -29,15 +29,20 @@ namespace SimpleFolderIcon.Editor
         {
             if (!Directory.Exists(PackageManagerIconPath))
             {
-                return assets.Any(str => ReplaceSeparatorChar(Path.GetDirectoryName(str)) == UnityPackageIconPath);
+                return assets.Any(str => ReplaceSeparatorChar(GetDirectoryName(str)) == UnityPackageIconPath);
             }
 
             if (!Directory.Exists(UnityPackageIconPath))
             {
-                return assets.Any(str => ReplaceSeparatorChar(Path.GetDirectoryName(str)) == PackageManagerIconPath);
+                return assets.Any(str => ReplaceSeparatorChar(GetDirectoryName(str)) == PackageManagerIconPath);
             }
 
-            return assets.Any(str => (ReplaceSeparatorChar(Path.GetDirectoryName(str)) == PackageManagerIconPath) || (ReplaceSeparatorChar(Path.GetDirectoryName(str)) == UnityPackageIconPath));
+            return assets.Any(str => (ReplaceSeparatorChar(GetDirectoryName(str)) == PackageManagerIconPath) || (ReplaceSeparatorChar(GetDirectoryName(str)) == UnityPackageIconPath));
+        }
+
+        private static string GetDirectoryName(string path)
+        {
+            return !Directory.Exists(path) ? string.Empty : Path.GetDirectoryName(path);
         }
 
         private static string ReplaceSeparatorChar(string path)
